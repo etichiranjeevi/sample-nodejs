@@ -27,6 +27,8 @@ pipeline {
             steps {
                 dir("${APP_DIR}") {
                     sh '''
+                        export PM2_HOME=/home/ubuntu/.pm2
+                        
                         # Stop old instance if running
                         pm2 delete $APP_NAME || true
 
