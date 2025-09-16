@@ -38,7 +38,6 @@ pipeline {
                         # Save PM2 process list
                         pm2 save
 
-                        # Ensure PM2 restarts on reboot (systemd)
                       
                     '''
                 }
