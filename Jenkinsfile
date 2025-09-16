@@ -37,7 +37,7 @@ pipeline {
                         pm2 save
 
                         # Ensure PM2 restarts on reboot (systemd)
-                        pm2 startup systemd -u ubuntu --hp /home/ubuntu
+                      //  pm2 startup systemd -u ubuntu --hp /home/ubuntu
                     '''
                 }
             }
